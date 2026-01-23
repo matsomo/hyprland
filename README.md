@@ -53,7 +53,6 @@ Using a custom color palette inspired by [Petrikeys](https://www.instagram.com/y
 - Hyprlock
 - Hyprpaper
 - NetworkManager (for network icon)
-- Wezterm (terminal)
 
 ## Notes
 
