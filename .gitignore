@@ -3,5 +3,7 @@
 .DS_Store
 .env
 *.backup
+SETUP_NOTES.md
+
 
 
