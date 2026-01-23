@@ -51,7 +51,7 @@ Using a custom color palette inspired by [Petrikeys](https://www.instagram.com/y
 - Hyprland
 - HyprPanel
 - Hyprlock
-- Hyprpaper
+- swww (wallpaper daemon)
 - NetworkManager (for network icon)
 
 ## Notes
