@@ -18,7 +18,7 @@ Hyprland setup including hyprpanel, hyprlock, and hyprpaper configurations.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hyprland.git ~/.config/hyprland
+git clone https://github.com/matsomo/hyprland.git ~/.config/hyprland
 
 # Create symlinks
 mkdir -p ~/.config/hypr
@@ -65,7 +65,3 @@ hyprctl reload
 ### Known Issues
 - The `network-status` script references `~/.config/Scripts/wifi-conn-strength` which is not included in this repo. The script will fallback to showing ethernet icon if this file is missing.
 - Personal paths in `hyprlock.conf` and `hyprpaper.conf` may need to be adjusted for your system (wallpaper paths, profile picture, etc.)
-
-
-
-
