@@ -1,6 +1,6 @@
 # Hyprland Configuration
 
-My personal Hyprland setup including hyprpanel, hyprlock, and hyprpaper configurations.
+Hyprland setup including hyprpanel, hyprlock, and hyprpaper configurations.
 
 ## Structure
 
@@ -31,11 +31,13 @@ ln -s ~/.config/hyprland/hyprpanel ~/.config/hyprpanel
 
 ## Color Scheme
 
-Using a custom Petrikeys-inspired color palette:
+Using a custom color palette inspired by [Petrikeys](https://www.instagram.com/yooj.key/?hl=en) keycaps:
 - Background: `#1B2A49` (Navy Blue)
 - Accent: `#008EDB` (Bright Blue)
 - Highlight: `#56C4E1` (Sky Blue)
 - Success: `#7EE2B8` (Mint Green)
+
+*Theme inspired by the beautiful Petrikeys keycap set designed by [@yooj.key](https://www.instagram.com/yooj.key/?hl=en)*
 
 ## Requirements
 
@@ -52,3 +54,4 @@ After system updates, you may need to reload Hyprland configuration:
 ```bash
 hyprctl reload
 ```
+
