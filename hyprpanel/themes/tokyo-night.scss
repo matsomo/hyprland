@@ -1,0 +1,218 @@
+// Tokyo Night Theme for Hyprpanel
+// Based on the values from hyprpanel_tokyo_night.json
+
+// Main background/foreground colors
+$bg: #1a1b26;
+$bg_dark: #16161e;
+$bg_dark1: #0C0E14;
+$bg_highlight: #292e42;
+$fg: #c0caf5;
+$fg_dark: #a9b1d6;
+$fg_gutter: #3b4261;
+$comment: #565f89;
+$terminal_black: #414868;
+$dark3: #545c7e;
+$dark5: #737aa2;
+
+// Colors
+$blue: #7aa2f7;
+$blue0: #3d59a1;
+$blue1: #2ac3de;
+$blue2: #0db9d7;
+$blue5: #89ddff;
+$blue6: #b4f9f8;
+$blue7: #394b70;
+$cyan: #7dcfff;
+$green: #9ece6a;
+$green1: #73daca;
+$green2: #41a6b5;
+$magenta: #bb9af7;
+$magenta2: #ff007c;
+$orange: #ff9e64;
+$purple: #9d7cd8;
+$red: #f7768e;
+$red1: #db4b4b;
+$teal: #1abc9c;
+$yellow: #e0af68;
+
+// Bar styling
+.bar {
+  background-color: rgba(17, 17, 27, 0.9); // theme.bar.background
+  color: #cdd6f4; // theme.bar.menus.text
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  border-radius: 0;
+}
+
+// Button styling
+.button {
+  background-color: #242438; // theme.bar.buttons.background
+  border-radius: 4px;
+  margin: 0 2px;
+  padding: 2px 8px;
+
+  &:hover {
+    background-color: #45475a; // theme.bar.buttons.hover
+  }
+
+  .icon {
+    color: #b4befe; // theme.bar.buttons.icon
+  }
+
+  .text {
+    color: #b4befe; // theme.bar.buttons.text
+  }
+}
+
+// Specific module styling
+.workspaces {
+  background-color: #242438; // theme.bar.buttons.workspaces.background
+
+  .workspace {
+    &.active {
+      color: #f5c2e7; // theme.bar.buttons.workspaces.active
+      border-bottom: 2px solid #f5c2e7; // theme.bar.buttons.workspaces.numbered_active_underline_color
+    }
+
+    &.occupied {
+      color: #f2cdcd; // theme.bar.buttons.workspaces.occupied
+    }
+
+    &:hover {
+      color: #f5c2e7; // theme.bar.buttons.workspaces.hover
+    }
+  }
+}
+
+// Clock module
+.clock {
+  background-color: #242438; // theme.bar.buttons.clock.background
+
+  .icon {
+    color: #f5c2e7; // theme.bar.buttons.clock.icon
+  }
+
+  .text {
+    color: #f5c2e7; // theme.bar.buttons.clock.text
+  }
+}
+
+// Network module
+.network {
+  background-color: #242438; // theme.bar.buttons.network.background
+
+  .icon {
+    color: #cba6f7; // theme.bar.buttons.network.icon
+  }
+
+  .text {
+    color: #cba6f7; // theme.bar.buttons.network.text
+  }
+}
+
+// Volume module
+.volume {
+  background-color: #242438; // theme.bar.buttons.volume.background
+
+  .icon {
+    color: #eba0ac; // theme.bar.buttons.volume.icon
+  }
+
+  .text {
+    color: #eba0ac; // theme.bar.buttons.volume.text
+  }
+}
+
+// Media module
+.media {
+  background-color: #242438; // theme.bar.buttons.media.background
+
+  .icon {
+    color: #b4befe; // theme.bar.buttons.media.icon
+  }
+
+  .text {
+    color: #b4befe; // theme.bar.buttons.media.text
+  }
+}
+
+// Bluetooth module
+.bluetooth {
+  background-color: #242438; // theme.bar.buttons.bluetooth.background
+
+  .icon {
+    color: #89dceb; // theme.bar.buttons.bluetooth.icon
+  }
+
+  .text {
+    color: #89dceb; // theme.bar.buttons.bluetooth.text
+  }
+}
+
+// Systray module
+.systray {
+  background-color: #242438; // theme.bar.buttons.systray.background
+}
+
+// Notifications module
+.notifications {
+  background-color: #242438; // theme.bar.buttons.notifications.background
+
+  .icon {
+    color: #b4befe; // theme.bar.buttons.notifications.icon
+  }
+}
+
+// Dashboard module
+.dashboard {
+  background-color: #242438; // theme.bar.buttons.dashboard.background
+
+  .icon {
+    color: #f9e2af; // theme.bar.buttons.dashboard.icon
+  }
+}
+
+// Power module
+.power {
+  background-color: #242438; // theme.bar.buttons.modules.power.background
+
+  .icon {
+    color: #f38ba8; // theme.bar.buttons.modules.power.icon
+  }
+}
+
+// Menu styling
+.menu {
+  background-color: #11111b; // theme.bar.menus.background
+  border: 1px solid #313244; // theme.bar.menus.border.color
+  border-radius: 8px;
+
+  .card {
+    background-color: #1e1e2e; // theme.bar.menus.cards
+    border-radius: 6px;
+  }
+
+  .label {
+    color: #b4befe; // theme.bar.menus.label
+  }
+
+  .text {
+    color: #cdd6f4; // theme.bar.menus.text
+  }
+}
+
+// Volume menu
+.volume-menu {
+  .slider {
+    .bar {
+      background-color: #585b71; // theme.bar.menus.volume.audio_slider.background
+
+      .fill {
+        background-color: #eba0ac; // theme.bar.menus.volume.audio_slider.primary
+      }
+    }
+
+    .handle {
+      background-color: #585b70; // theme.bar.menus.volume.audio_slider.puck
+    }
+  }
+}

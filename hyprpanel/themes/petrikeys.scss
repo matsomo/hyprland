@@ -1,0 +1,218 @@
+// Petrikeys Theme for Hyprpanel
+// Based on the color palette from Petrikeys
+
+// Main background/foreground colors
+$bg: #1B2A49; // Navy Blue (Pantone 533 C)
+$bg_dark: #15223b; // Darker shade of Navy Blue
+$bg_dark1: #0f1a2e; // Even darker Navy Blue
+$bg_highlight: #2c3e63; // Lighter Navy Blue
+$fg: #FFFFFF; // White
+$fg_dark: #e6e6e6; // Slightly darker white
+$fg_gutter: #56C4E1; // Sky Blue (Pantone 637 C)
+$comment: #6EDBD5; // Aqua (Pantone 3242 C)
+$terminal_black: #1B2A49; // Navy Blue
+$dark3: #2c3e63; // Mid-tone Navy Blue
+$dark5: #3d5280; // Light Navy Blue
+
+// Colors
+$blue: #008EDB; // Bright Blue (Pantone 2925 C)
+$blue0: #0078b9; // Darker Bright Blue
+$blue1: #56C4E1; // Sky Blue (Pantone 637 C)
+$blue2: #45b3d0; // Slightly darker Sky Blue
+$blue5: #6EDBD5; // Aqua (Pantone 3242 C)
+$blue6: #7EE2B8; // Mint Green (Pantone 2412 C)
+$blue7: #3d5280; // Light Navy Blue
+$cyan: #6EDBD5; // Aqua (Pantone 3242 C)
+$green: #7EE2B8; // Mint Green (Pantone 2412 C)
+$green1: #6dcba3; // Slightly darker Mint Green
+$green2: #5cb48e; // Even darker Mint Green
+$magenta: #56C4E1; // Sky Blue (as accent)
+$magenta2: #008EDB; // Bright Blue (as accent)
+$orange: #7EE2B8; // Mint Green (as accent)
+$purple: #56C4E1; // Sky Blue (as accent)
+$red: #008EDB; // Bright Blue (as accent)
+$red1: #0078b9; // Darker Bright Blue
+$teal: #6EDBD5; // Aqua (Pantone 3242 C)
+$yellow: #7EE2B8; // Mint Green (as accent)
+
+// Bar styling
+.bar {
+  background-color: rgba(27, 42, 73, 0.9); // Navy Blue background
+  color: #FFFFFF; // White text
+  font-family: "JetBrainsMono Nerd Font", sans-serif;
+  border-radius: 0;
+}
+
+// Button styling
+.button {
+  background-color: #2c3e63; // Lighter Navy Blue
+  border-radius: 4px;
+  margin: 0 2px;
+  padding: 2px 8px;
+
+  &:hover {
+    background-color: #3d5280; // Light Navy Blue
+  }
+
+  .icon {
+    color: #6EDBD5; // Aqua
+  }
+
+  .text {
+    color: #FFFFFF; // White
+  }
+}
+
+// Specific module styling
+.workspaces {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .workspace {
+    &.active {
+      color: #7EE2B8; // Mint Green
+      border-bottom: 2px solid #7EE2B8; // Mint Green underline
+    }
+
+    &.occupied {
+      color: #56C4E1; // Sky Blue
+    }
+
+    &:hover {
+      color: #6EDBD5; // Aqua
+    }
+  }
+}
+
+// Clock module
+.clock {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #7EE2B8; // Mint Green
+  }
+
+  .text {
+    color: #FFFFFF; // White
+  }
+}
+
+// Network module
+.network {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #56C4E1; // Sky Blue
+  }
+
+  .text {
+    color: #FFFFFF; // White
+  }
+}
+
+// Volume module
+.volume {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #6EDBD5; // Aqua
+  }
+
+  .text {
+    color: #FFFFFF; // White
+  }
+}
+
+// Media module
+.media {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #008EDB; // Bright Blue
+  }
+
+  .text {
+    color: #FFFFFF; // White
+  }
+}
+
+// Bluetooth module
+.bluetooth {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #56C4E1; // Sky Blue
+  }
+
+  .text {
+    color: #FFFFFF; // White
+  }
+}
+
+// Systray module
+.systray {
+  background-color: #2c3e63; // Lighter Navy Blue
+}
+
+// Notifications module
+.notifications {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #7EE2B8; // Mint Green
+  }
+}
+
+// Dashboard module
+.dashboard {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #6EDBD5; // Aqua
+  }
+}
+
+// Power module
+.power {
+  background-color: #2c3e63; // Lighter Navy Blue
+
+  .icon {
+    color: #008EDB; // Bright Blue
+  }
+}
+
+// Menu styling
+.menu {
+  background-color: #1B2A49; // Navy Blue
+  border: 1px solid #3d5280; // Light Navy Blue
+  border-radius: 8px;
+
+  .card {
+    background-color: #2c3e63; // Lighter Navy Blue
+    border-radius: 6px;
+  }
+
+  .label {
+    color: #7EE2B8; // Mint Green
+  }
+
+  .text {
+    color: #FFFFFF; // White
+  }
+}
+
+// Volume menu
+.volume-menu {
+  .slider {
+    .bar {
+      background-color: #3d5280; // Light Navy Blue
+
+      .fill {
+        background-color: #6EDBD5; // Aqua
+      }
+    }
+
+    .handle {
+      background-color: #56C4E1; // Sky Blue
+    }
+  }
+}
