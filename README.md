@@ -18,15 +18,15 @@ My personal Hyprland setup including hyprpanel, hyprlock, and hyprpaper configur
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/hyprland.git ~/hyprland
+git clone https://github.com/yourusername/hyprland.git ~/.config/hyprland
 
 # Create symlinks
 mkdir -p ~/.config/hypr
-ln -s ~/hyprland/conf/hyprland.conf ~/.config/hypr/hyprland.conf
-ln -s ~/hyprland/conf/hyprlock.conf ~/.config/hypr/hyprlock.conf
-ln -s ~/hyprland/conf/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
-ln -s ~/hyprland/scripts ~/.config/hypr/scripts
-ln -s ~/hyprland/hyprpanel ~/.config/hyprpanel
+ln -s ~/.config/hyprland/conf/hyprland.conf ~/.config/hypr/hyprland.conf
+ln -s ~/.config/hyprland/conf/hyprlock.conf ~/.config/hypr/hyprlock.conf
+ln -s ~/.config/hyprland/conf/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
+ln -s ~/.config/hyprland/scripts ~/.config/hypr/scripts
+ln -s ~/.config/hyprland/hyprpanel ~/.config/hyprpanel
 ```
 
 ## Color Scheme
