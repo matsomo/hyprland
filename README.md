@@ -29,8 +29,11 @@ ln -s ~/.config/hyprland/scripts ~/.config/hypr/scripts
 ln -s ~/.config/hyprland/hyprpanel ~/.config/hyprpanel
 
 # Configure weather API key (optional)
-# Get a free API key from https://www.weatherapi.com/
-# Edit hyprpanel/config.json and replace YOUR_WEATHER_API_KEY_HERE with your key
+cd ~/.config/hyprland
+cp .env.example .env
+# Edit .env and add your weather API key from https://www.weatherapi.com/
+# Then run the setup script to update the configuration
+./setup.sh
 ```
 
 ## Color Scheme
@@ -62,6 +65,7 @@ hyprctl reload
 ### Known Issues
 - The `network-status` script references `~/.config/Scripts/wifi-conn-strength` which is not included in this repo. The script will fallback to showing ethernet icon if this file is missing.
 - Personal paths in `hyprlock.conf` and `hyprpaper.conf` may need to be adjusted for your system (wallpaper paths, profile picture, etc.)
+
 
 
 
