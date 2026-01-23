@@ -60,7 +60,7 @@
   "theme.bar.margin_bottom": "0.1em",
   "theme.bar.margin_sides": "0.5em",
   "theme.bar.dropdownGap": "2.9em",
-  "menus.clock.weather.key": "YOUR_WEATHER_API_KEY_HERE",
+  "menus.clock.weather.key": "96d5c7563d054432979223738252210",
   "theme.name": "petrikeys",
   "theme.colors": {
     "bg": "#1B2A49",
