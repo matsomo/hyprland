@@ -3,4 +3,7 @@
 .DS_Store
 .env
 *.backup
-SETUP_NOTES.md
+.claude
+hyprland.conf
+hyprlock.conf
+hyprpaper.conf
