@@ -48,11 +48,45 @@ Using a custom color palette inspired by [Petrikeys](https://www.instagram.com/y
 
 ## Requirements
 
+### Core
 - Hyprland
 - HyprPanel
 - Hyprlock
 - swww (wallpaper daemon)
-- NetworkManager (for network icon)
+
+### Hyprlock dependencies
+- **SF Pro fonts** (`otf-san-francisco` or similar from AUR) - used by all lock screen labels
+- **playerctl** - media status on lock screen (`song-status` script)
+- **bat** - keyboard layout detection (`layout-status` script)
+- **NetworkManager** - network status icon (`network-status` script)
+- **python** - wifi signal strength (`network-status` script)
+
+### Install on Arch
+
+```bash
+sudo pacman -S playerctl bat networkmanager python
+
+# SF Pro fonts (AUR)
+yay -S otf-san-francisco
+```
+
+### Scripts symlink
+
+The hyprlock config references scripts at `~/.config/Scripts/`. Create a symlink:
+
+```bash
+ln -s ~/.config/hyprland/scripts ~/.config/Scripts
+```
+
+## Customization
+
+Before using, update the following for your system:
+
+- **Monitor name** - all widgets in `hyprlock.conf` are pinned to `monitor = DP-2`. Find yours with `hyprctl monitors` and replace accordingly.
+- **Username** - "matsa" is hardcoded in `hyprlock.conf`
+- **Wallpaper** - `~/Images/microbes_dark.jpg` must exist (also referenced in `hyprpaper.conf`)
+- **Profile picture** - `~/Pictures/fullpfp.png` must exist
+- **Battery script** - reads from `/sys/class/power_supply/BAT1/`, which may differ on your hardware or not exist on desktops
 
 ## Notes
 
@@ -63,4 +97,3 @@ hyprctl reload
 
 ### Known Issues
 - The `network-status` script references `~/.config/Scripts/wifi-conn-strength` which is not included in this repo. The script will fallback to showing ethernet icon if this file is missing.
-- Personal paths in `hyprlock.conf` and `hyprpaper.conf` may need to be adjusted for your system (wallpaper paths, profile picture, etc.)
