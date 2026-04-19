@@ -9,7 +9,8 @@
     "/"
   ],
   "bar.layouts": {
-    "0": {
+    "*": {
+      "_comment": "Fallback (e.g., smart TV when connected)",
       "left": [
         "workspaces"
       ],
@@ -21,7 +22,8 @@
         "volume"
       ]
     },
-    "1": {
+    "DP-2": {
+      "_comment": "Ultrawide monitor (primary)",
       "left": [
         "workspaces"
       ],
