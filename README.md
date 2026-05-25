@@ -1,13 +1,12 @@
 # Hyprland Configuration
 
-Hyprland setup including hyprpanel, hyprlock, and hyprpaper configurations.
+Hyprland setup including hyprpanel, hyprlock, and awww (wallpaper) configurations.
 
 ## Structure
 
 - `conf/` - Main Hyprland configuration files
-  - `hyprland.conf` - Core Hyprland window manager config
+  - `hyprland.conf` - Core Hyprland window manager config (also starts `awww-daemon` and sets the wallpaper via `awww img`)
   - `hyprlock.conf` - Lock screen configuration
-  - `hyprpaper.conf` - Wallpaper daemon configuration
 - `hyprpanel/` - HyprPanel config and themes
   - `config.json` - Active HyprPanel configuration
   - `themes/` - SCSS theme files (petrikeys, tokyo-night)
@@ -24,7 +23,6 @@ git clone https://github.com/matsomo/hyprland.git ~/.config/hyprland
 mkdir -p ~/.config/hypr
 ln -s ~/.config/hyprland/conf/hyprland.conf ~/.config/hypr/hyprland.conf
 ln -s ~/.config/hyprland/conf/hyprlock.conf ~/.config/hypr/hyprlock.conf
-ln -s ~/.config/hyprland/conf/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 ln -s ~/.config/hyprland/scripts ~/.config/hypr/scripts
 ln -s ~/.config/hyprland/hyprpanel ~/.config/hyprpanel
 
@@ -52,7 +50,7 @@ Using a custom color palette inspired by [Petrikeys](https://www.instagram.com/y
 - Hyprland
 - HyprPanel
 - Hyprlock
-- swww (wallpaper daemon)
+- awww (wallpaper daemon — swww fork, from AUR; provides `awww-daemon` and the `awww` CLI)
 
 ### Hyprlock dependencies
 - **SF Pro fonts** (`otf-san-francisco` or similar from AUR) - used by all lock screen labels
@@ -66,8 +64,8 @@ Using a custom color palette inspired by [Petrikeys](https://www.instagram.com/y
 ```bash
 sudo pacman -S playerctl bat networkmanager python
 
-# SF Pro fonts (AUR)
-yay -S otf-san-francisco
+# AUR packages: SF Pro fonts + awww wallpaper daemon
+yay -S otf-san-francisco awww
 ```
 
 ### Scripts symlink
@@ -84,7 +82,7 @@ Before using, update the following for your system:
 
 - **Monitor name** - all widgets in `hyprlock.conf` are pinned to `monitor = DP-2`. Find yours with `hyprctl monitors` and replace accordingly.
 - **Username** - "matsa" is hardcoded in `hyprlock.conf`
-- **Wallpaper** - `~/Images/microbes_dark.jpg` must exist (also referenced in `hyprpaper.conf`)
+- **Wallpaper** - `~/Images/microbes_dark.jpg` must exist; the image path is set via the `exec-once = awww img ...` line in `hyprland.conf`
 - **Profile picture** - `~/Pictures/fullpfp.png` must exist
 - **Battery script** - reads from `/sys/class/power_supply/BAT1/`, which may differ on your hardware or not exist on desktops
 
